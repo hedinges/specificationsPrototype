@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import static java.lang.Boolean.TRUE;
 
-@RestController
-@EnableAutoConfiguration
+//@RestController
+//@EnableAutoConfiguration
 public class SpecificationController {
 
 
-    @RequestMapping("/specification")
-    public Specification greeting(@RequestParam(value="name", defaultValue="World") String name) {
-        return new Specification(SpecificationType.TEXT, "country.iso3", TRUE,"ZERTYRE");
-    }
+  //  @RequestMapping("/specification")
+//    public Specification greeting(@RequestParam(value="name", defaultValue="World") String name) {
+//        return new Specification(SpecificationType.TEXT, "country.iso3", TRUE,"ZERTYRE");
+//s    }
 }

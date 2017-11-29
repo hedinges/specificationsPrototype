@@ -1,8 +1,12 @@
 package com.itea.domain;
 
 import static java.lang.Boolean.FALSE;
+import org.springframework.data.annotation.Id;
 
 public class Specification {
+
+    @Id private String id;
+
 
     private SpecificationType type;
 
@@ -12,12 +16,6 @@ public class Specification {
     private String value = "";
 
 
-    public Specification(SpecificationType type, String key, Boolean boolValue, String value) {
-        this.key = key;
-        this.boolValue = boolValue;
-        this.value = value;
-        this.type = type;
-    }
 
     public String getKey() {
         return key;
